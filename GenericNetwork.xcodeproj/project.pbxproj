@@ -58,6 +58,8 @@
 		F02F430F2531AF9C00A1B801 /* MockURLResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01161E225319E3B002C86FB /* MockURLResponder.swift */; };
 		F02F43212531AFC400A1B801 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F42F72531AD4100A1B801 /* MockURLProtocol.swift */; };
 		F057F9E52531A4D700A0A3A5 /* MockErrorURLResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057F9E42531A4D700A0A3A5 /* MockErrorURLResponder.swift */; };
+		F0CB1F7F2531C35000347934 /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = F0CB1F7E2531C35000347934 /* Assets */; };
+		F0CB1F842531C3F900347934 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F0CB1F832531C3F800347934 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		F02F42F72531AD4100A1B801 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		F02F430A2531AE2000A1B801 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 		F057F9E42531A4D700A0A3A5 /* MockErrorURLResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockErrorURLResponder.swift; sourceTree = "<group>"; };
+		F0CB1F7E2531C35000347934 /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
+		F0CB1F832531C3F800347934 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +150,8 @@
 		F012D1CF25317EB10017BE52 = {
 			isa = PBXGroup;
 			children = (
+				F0CB1F832531C3F800347934 /* README.md */,
+				F0CB1F7E2531C35000347934 /* Assets */,
 				F012D1DA25317EB10017BE52 /* GenericNetwork */,
 				F012D1EC25317EB20017BE52 /* GenericNetworkTests */,
 				F012D1F725317EB20017BE52 /* GenericNetworkUITests */,
@@ -377,6 +383,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F012D1E325317EB20017BE52 /* Preview Assets.xcassets in Resources */,
+				F0CB1F7F2531C35000347934 /* Assets in Resources */,
+				F0CB1F842531C3F900347934 /* README.md in Resources */,
 				F012D1E025317EB20017BE52 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
