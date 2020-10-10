@@ -13,19 +13,25 @@ struct ContentView: View {
     static var publisher: AnyCancellable? = nil
 
     var body: some View {
-        Text("Item title: \(item?.title ?? "")")
-            .padding()
-            .onAppear {
-                let session = URLSession(mockResponder: Item.MockDataURLResponder.self)
-                let accessToken = AccessToken(rawValue: "12345")
+        NavigationView {
+            VStack {
+                NavigationLink("Mock via Store", destination: ContentView2())
 
-                Self.publisher = session.publisher(for: .latestItem, using: accessToken)
-                    .sink(receiveCompletion: { _ in }, receiveValue: update(item:))
+                Text("Item title: \(item?.title ?? "")")
+                    .padding()
+                    .onAppear {
+                        let session = URLSession(mockResponder: Item.MockDataURLResponder.self)
+                        let accessToken = AccessToken(rawValue: "12345")
+
+                        Self.publisher = session.publisher(for: .latestItem, using: accessToken)
+                            .sink(receiveCompletion: { _ in }, receiveValue: update(item:))
+                    }
+                    .navigationTitle("Mock via View.onAppear")
             }
+        }
     }
 
     func update(item: Item) {
-        print(item)
         self.item = item
     }
 }
@@ -33,8 +39,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .onAppear {
-                
-            }
+            .onAppear {}
     }
 }

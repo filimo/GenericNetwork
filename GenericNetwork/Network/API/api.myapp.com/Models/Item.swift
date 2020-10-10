@@ -15,7 +15,7 @@ struct Item: Codable, Equatable {
 
 extension Item {
     enum MockDataURLResponder: MockURLResponder {
-        static let item = Item(id: UUID(), title: "Title", description: "Description")
+        static let item = Item(id: UUID(), title: "title value", description: "Description")
 
         static func respond(to request: URLRequest) throws -> Data {
             let response = NetworkResponse(result: item)
