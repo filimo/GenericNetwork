@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -50,6 +50,7 @@
 		F012D26D25317FE40017BE52 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012D26925317FE40017BE52 /* NetworkResponse.swift */; };
 		F012D26E25317FE40017BE52 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012D26925317FE40017BE52 /* NetworkResponse.swift */; };
 		F012D26F25317FE40017BE52 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F012D26925317FE40017BE52 /* NetworkResponse.swift */; };
+		F0135FB025320FC200FE05ED /* Bagel in Frameworks */ = {isa = PBXBuildFile; productRef = F0135FAF25320FC200FE05ED /* Bagel */; };
 		F02F42E22531AC9700A1B801 /* MockURLResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01161E225319E3B002C86FB /* MockURLResponder.swift */; };
 		F02F42E62531AC9A00A1B801 /* MockErrorURLResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F057F9E42531A4D700A0A3A5 /* MockErrorURLResponder.swift */; };
 		F02F42FF2531AD9D00A1B801 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02F42F72531AD4100A1B801 /* MockURLProtocol.swift */; };
@@ -62,6 +63,10 @@
 		F0CB1F842531C3F900347934 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F0CB1F832531C3F800347934 /* README.md */; };
 		F0CB1F892531CC9000347934 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB1F882531CC9000347934 /* Store.swift */; };
 		F0CB1F8E2531CDE000347934 /* ContentView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB1F8D2531CDE000347934 /* ContentView2.swift */; };
+		F0CB1FA52532063000347934 /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB1FA42532063000347934 /* CountriesView.swift */; };
+		F0CB1FAB2532069800347934 /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB1FAA2532069800347934 /* Countries.swift */; };
+		F0CB1FB3253207A200347934 /* Endpoint-tripster.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB1FB2253207A200347934 /* Endpoint-tripster.swift */; };
+		F0CB1FBB253208CB00347934 /* CountriesResultsLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0CB1FBA253208CB00347934 /* CountriesResultsLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +120,10 @@
 		F0CB1F832531C3F800347934 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F0CB1F882531CC9000347934 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		F0CB1F8D2531CDE000347934 /* ContentView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView2.swift; sourceTree = "<group>"; };
+		F0CB1FA42532063000347934 /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
+		F0CB1FAA2532069800347934 /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		F0CB1FB2253207A200347934 /* Endpoint-tripster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint-tripster.swift"; sourceTree = "<group>"; };
+		F0CB1FBA253208CB00347934 /* CountriesResultsLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesResultsLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0135FB025320FC200FE05ED /* Bagel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +191,7 @@
 				F012D1DB25317EB10017BE52 /* GenericNetworkApp.swift */,
 				F012D1DD25317EB10017BE52 /* ContentView.swift */,
 				F0CB1F8D2531CDE000347934 /* ContentView2.swift */,
+				F0CB1FA42532063000347934 /* CountriesView.swift */,
 				F012D1DF25317EB20017BE52 /* Assets.xcassets */,
 				F012D1E425317EB20017BE52 /* Info.plist */,
 				F012D1E125317EB20017BE52 /* Preview Content */,
@@ -261,7 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				F012D28B25318D660017BE52 /* api.myapp.com */,
-				F012D25825317FC90017BE52 /* SearchResultsLoader.swift */,
+				F0CB1FA92532067D00347934 /* tripster */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -271,6 +282,7 @@
 			children = (
 				F01161D325319A62002C86FB /* Models */,
 				F01161BD253196E6002C86FB /* Endpoint-api.myapp.com.swift */,
+				F012D25825317FC90017BE52 /* SearchResultsLoader.swift */,
 			);
 			path = api.myapp.com;
 			sourceTree = "<group>";
@@ -293,6 +305,16 @@
 			path = Store;
 			sourceTree = "<group>";
 		};
+		F0CB1FA92532067D00347934 /* tripster */ = {
+			isa = PBXGroup;
+			children = (
+				F0CB1FAA2532069800347934 /* Countries.swift */,
+				F0CB1FB2253207A200347934 /* Endpoint-tripster.swift */,
+				F0CB1FBA253208CB00347934 /* CountriesResultsLoader.swift */,
+			);
+			path = tripster;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -309,6 +331,9 @@
 			dependencies = (
 			);
 			name = GenericNetwork;
+			packageProductDependencies = (
+				F0135FAF25320FC200FE05ED /* Bagel */,
+			);
 			productName = GenericNetwork;
 			productReference = F012D1D825317EB10017BE52 /* GenericNetwork.app */;
 			productType = "com.apple.product-type.application";
@@ -380,6 +405,9 @@
 				Base,
 			);
 			mainGroup = F012D1CF25317EB10017BE52;
+			packageReferences = (
+				F0135FAE25320FC200FE05ED /* XCRemoteSwiftPackageReference "Bagel" */,
+			);
 			productRefGroup = F012D1D925317EB10017BE52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0CB1F8E2531CDE000347934 /* ContentView2.swift in Sources */,
+				F0CB1FB3253207A200347934 /* Endpoint-tripster.swift in Sources */,
 				F01161BE253196E6002C86FB /* Endpoint-api.myapp.com.swift in Sources */,
 				F02F42E22531AC9700A1B801 /* MockURLResponder.swift in Sources */,
 				F012D1DE25317EB10017BE52 /* ContentView.swift in Sources */,
@@ -433,7 +462,9 @@
 				F012D24C25317FBB0017BE52 /* SearchResults.swift in Sources */,
 				F012D23A25317FAF0017BE52 /* URLSession.swift in Sources */,
 				F012D1DC25317EB10017BE52 /* GenericNetworkApp.swift in Sources */,
+				F0CB1FA52532063000347934 /* CountriesView.swift in Sources */,
 				F012D22525317F940017BE52 /* EndpointKinds.swift in Sources */,
+				F0CB1FBB253208CB00347934 /* CountriesResultsLoader.swift in Sources */,
 				F012D25925317FC90017BE52 /* SearchResultsLoader.swift in Sources */,
 				F012D22825317F940017BE52 /* InvalidEndpointError.swift in Sources */,
 				F012D26D25317FE40017BE52 /* NetworkResponse.swift in Sources */,
@@ -442,6 +473,7 @@
 				F01161A625319395002C86FB /* URLHost.swift in Sources */,
 				F012D23725317FAF0017BE52 /* AccessToken.swift in Sources */,
 				F012D23D25317FAF0017BE52 /* UserSession.swift in Sources */,
+				F0CB1FAB2532069800347934 /* Countries.swift in Sources */,
 				F02F42E62531AC9A00A1B801 /* MockErrorURLResponder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -788,6 +820,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F0135FAE25320FC200FE05ED /* XCRemoteSwiftPackageReference "Bagel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/filimo/Bagel.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F0135FAF25320FC200FE05ED /* Bagel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F0135FAE25320FC200FE05ED /* XCRemoteSwiftPackageReference "Bagel" */;
+			productName = Bagel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F012D1D025317EB10017BE52 /* Project object */;
 }

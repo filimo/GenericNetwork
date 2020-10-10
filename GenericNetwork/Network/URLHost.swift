@@ -13,11 +13,11 @@ struct URLHost: RawRepresentable {
 
 extension URLHost {
     static var staging: Self {
-        URLHost(rawValue: "staging.api.myapp.com")
+        URLHost(rawValue: "experience.tripster.ru")
     }
 
     static var production: Self {
-        URLHost(rawValue: "api.myapp.com")
+        URLHost(rawValue: "experience.tripster.ru")
     }
 
     static var `default`: Self {

@@ -15,7 +15,7 @@ class Store: ObservableObject {
     var publisher: AnyCancellable? = nil
 
     private init() {
-        let session = URLSession(mockResponder: Item.MockDataURLResponder.self)
+        let session = URLSession.shared
         let accessToken = AccessToken(rawValue: "12345")
 
         publisher = session.publisher(for: .latestItem, using: accessToken)

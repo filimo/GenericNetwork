@@ -18,7 +18,7 @@ extension Item {
         static let item = Item(id: UUID(), title: "title value", description: "Description")
 
         static func respond(to request: URLRequest) throws -> Data {
-            let response = NetworkResponse(result: item)
+            let response = NetworkResponse(results: item)
             return try JSONEncoder().encode(response)
         }
     }

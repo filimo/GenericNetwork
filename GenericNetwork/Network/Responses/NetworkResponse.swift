@@ -8,5 +8,5 @@
 import Foundation
 
 struct NetworkResponse<Wrapped: Codable>: Codable {
-    var result: Wrapped
+    var results: Wrapped
 }

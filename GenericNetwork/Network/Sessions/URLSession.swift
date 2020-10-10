@@ -23,7 +23,7 @@ extension URLSession {
         return dataTaskPublisher(for: request)
             .map(\.data)
             .decode(type: NetworkResponse<R>.self, decoder: decoder)
-            .map(\.result)
+            .map(\.results)
             .eraseToAnyPublisher()
     }
 }
