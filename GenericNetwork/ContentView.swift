@@ -19,7 +19,7 @@ struct ContentView: View {
                 let session = URLSession(mockResponder: Item.MockDataURLResponder.self)
                 let accessToken = AccessToken(rawValue: "12345")
 
-                publisher = session.publisher(for: .latestItem, using: accessToken)
+                Self.publisher = session.publisher(for: .latestItem, using: accessToken)
                     .sink(receiveCompletion: { _ in }, receiveValue: update(item:))
             }
     }
