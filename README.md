@@ -1,8 +1,8 @@
 # GenericNetwork
 
-Code from aticles 
-[Creating generic networking APIs in Swift](https://www.swiftbysundell.com/articles/creating-generic-networking-apis-in-swift/)
-[Testing networking logic in Swift](https://www.swiftbysundell.com/articles/testing-networking-logic-in-swift/)
+## Code from aticles 
+[Creating generic networking APIs in Swift](https://www.swiftbysundell.com/articles/creating-generic-networking-apis-in-swift/)<br/>
+[Testing networking logic in Swift](https://www.swiftbysundell.com/articles/testing-networking-logic-in-swift/)<br/>
 
-Implemented mock to support in Canvas Preview.
+Implemented mock to support in Canvas Preview.<br/>
 ![](Assets/MockInCanvas.png)
