@@ -13,7 +13,7 @@ extension URLSession {
         for endpoint: Endpoint<K, R>,
         using requestData: K.RequestData,
         decoder: JSONDecoder = .init()
-    ) -> AnyPublisher<R, Error> {
+    ) -> AnyPublisher<R, Error>  where R: Codable {
         guard let request = endpoint.makeRequest(with: requestData) else {
             return Fail(
                 error: InvalidEndpointError(endpoint: endpoint)
@@ -25,5 +25,14 @@ extension URLSession {
             .decode(type: NetworkResponse<R>.self, decoder: decoder)
             .map(\.result)
             .eraseToAnyPublisher()
+    }
+}
+
+extension URLSession {
+    convenience init<T: MockURLResponder>(mockResponder: T.Type) {
+        let config = URLSessionConfiguration.ephemeral
+        config.protocolClasses = [MockURLProtocol<T>.self]
+        self.init(configuration: config)
+        URLProtocol.registerClass(MockURLProtocol<T>.self)
     }
 }

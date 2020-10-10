@@ -7,6 +7,6 @@
 
 import Foundation
 
-enum AccessToken: String {
-    case EndpointKind
+struct AccessToken: RawRepresentable {
+    var rawValue: String
 }

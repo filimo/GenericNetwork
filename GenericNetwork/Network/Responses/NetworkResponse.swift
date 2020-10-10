@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct NetworkResponse<Wrapped: Decodable>: Decodable {
+struct NetworkResponse<Wrapped: Codable>: Codable {
     var result: Wrapped
 }

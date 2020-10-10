@@ -38,3 +38,12 @@ enum EndpointKinds {
         }
     }
 }
+
+extension EndpointKinds {
+    enum Stub: EndpointKind {
+        static func prepare(_ request: inout URLRequest,
+                            with data: Void) {
+            // No-op
+        }
+    }
+}
