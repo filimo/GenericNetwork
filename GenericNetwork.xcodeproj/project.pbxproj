@@ -233,9 +233,9 @@
 				F02F42E12531AC8500A1B801 /* Mocks */,
 				F012D22025317F660017BE52 /* Endpoints */,
 				F012D21F25317F5E0017BE52 /* Sessions */,
-				F012D27D2531813A0017BE52 /* Responses */,
 				F012D287253181950017BE52 /* API */,
 				F01161A525319395002C86FB /* URLHost.swift */,
+				F012D26925317FE40017BE52 /* NetworkResponse.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -258,14 +258,6 @@
 				F012D22325317F940017BE52 /* InvalidEndpointError.swift */,
 			);
 			path = Endpoints;
-			sourceTree = "<group>";
-		};
-		F012D27D2531813A0017BE52 /* Responses */ = {
-			isa = PBXGroup;
-			children = (
-				F012D26925317FE40017BE52 /* NetworkResponse.swift */,
-			);
-			path = Responses;
 			sourceTree = "<group>";
 		};
 		F012D287253181950017BE52 /* API */ = {
